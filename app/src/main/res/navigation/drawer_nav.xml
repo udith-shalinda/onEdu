@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_nav"
+    app:startDestination="@id/profile_ui">
+
+    <fragment
+        android:id="@+id/profile_ui"
+        android:name="com.hrandika.angular.onedu.profile.ui.Profile_ui"
+        android:label="profile_ui_fragment"
+        tools:layout="@layout/profile_ui_fragment" />
+    <fragment
+        android:id="@+id/dashboardFragment"
+        android:name="com.hrandika.angular.onedu.profile.ui.ui.dashboard.DashboardFragment"
+        android:label="fragment_dashboard"
+        tools:layout="@layout/fragment_dashboard" />
+    <fragment
+        android:id="@+id/notificationsFragment"
+        android:name="com.hrandika.angular.onedu.profile.ui.ui.notifications.NotificationsFragment"
+        android:label="fragment_notifications"
+        tools:layout="@layout/fragment_notifications" />
+
+</navigation>
